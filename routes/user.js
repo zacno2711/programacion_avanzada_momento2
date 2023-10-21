@@ -46,6 +46,16 @@ router.post('/create-vehicle', async(req, res) => {
         }
     )})
 
+router.get("/rentar-vehicle", (req, res)=>{
+    res.redirect('/rent/rentar_vehicle')
+})
+router.get("/list-vehicle", (req, res)=>{
+    res.redirect('/cars/list-vehicle')
+})
+router.get("/list-rent", (req, res)=>{
+    res.redirect('/rent/list-rent')
+})
+
 
 
 module.exports = router;
